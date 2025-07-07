@@ -1,11 +1,8 @@
 function askNumber(){
     const givenNumber=document.getElementById("inputNumberGuessed")
     let value= Number(givenNumber.value)
-    if(isNaN(value)){
-        alert("tu dois rentrez un numero")
-        
-    }
-    if(value<0 || value>50){
+    
+    if((value<0 || value>50 )){
         alert("tu dois rentrez un chiffre entre 0 et 50")  
         document.getElementById("inputNumberGuessed").value = ""
         
@@ -13,15 +10,14 @@ function askNumber(){
     return value
 }
 function numberGuess(){
-    const numberToGuess=document.getElementById("inputNumberToGuess")
+    let numberToGuess=document.getElementById("inputNumberToGuess")
     let value2 = Number(numberToGuess.value)
-    if(isNaN(value2)){
-        alert("tu dois rentrez un numero")
-        document.getElementById("inputNumberToGuess").value=""
-        
-    }
-    if(value2<0 || value2>50){
+    if (isNaN(value2) || value2 < 0 || value2 > 50) {
         alert("tu dois rentrez un chiffre entre 0 et 50")  
+        //numberToGuess=document.getElementById("inputNumberToGuess")
+        numberToGuess.value=""
+        return null
+        //document.getElementById("inputNumberToGuess").value=""
         
     }
     return value2
