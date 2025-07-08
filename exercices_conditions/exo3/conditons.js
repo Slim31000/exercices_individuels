@@ -1,6 +1,6 @@
 const tmp = 15;
 
-if (tmp < 0) {
+/*if (tmp < 0) {
     console.log("Freezing weather.");
 }
 
@@ -21,14 +21,14 @@ else if (tmp < 40) {
 
 else {
     console.log("Its very hot.");
-}
+}*/
 
 
 switch (true) {
     case (tmp < 0):
         console.log("Freezing weather.");
         break
-
+    
     case (tmp < 10):
         console.log("Very cold weather.");
         break
@@ -40,6 +40,7 @@ switch (true) {
     case (tmp < 30):
         console.log("Normal in temp.");
         break
+        
     case (tmp < 40):
         console.log("Its Hot.");
         break
