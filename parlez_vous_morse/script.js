@@ -113,7 +113,7 @@ function getMorseCharacterList(caractere) {
 
     return translate
 }
-getMorseCharacterList('/')
+
 function decode() {
     let decode = []
 
