@@ -1,7 +1,7 @@
-
+const key= 'Bearer 92hJ4YO3v0EX2jPXAlvg'
 async function reaserchMovies() {
     const response = await fetch('https://the-one-api.dev/v2/movie', {
-        headers: { Authorization: 'Bearer 92hJ4YO3v0EX2jPXAlvg' }
+        headers: { Authorization: key }
     })
     const data = await response.json()
     const film= document.getElementById('coutfilms')
@@ -16,7 +16,7 @@ async function reaserchMovies() {
 }
 async function rentableMovies() {
         const response = await fetch('https://the-one-api.dev/v2/movie', {
-        headers: { Authorization: 'Bearer 92hJ4YO3v0EX2jPXAlvg' }
+        headers: { Authorization: key }
     })
     const data = await response.json()
     const rentabilite= document.getElementById('rentabilite')
